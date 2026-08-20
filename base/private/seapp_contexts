@@ -15,3 +15,5 @@ user=_app seinfo=platform name=com.mediatek.capabilitytest domain=capability_app
 
 # This is for RsuService apk
 user=_app seinfo=platform name=com.mediatek.rsuprocess domain=rsu_app type=app_data_file levelFrom=user
+
+user=system isPrivApp=true seinfo=platform name=com.qualcomm.qti.poweroffalarm type=system_app_data_file domain=power_off_alarm levelFrom=user
