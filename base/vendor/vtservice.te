@@ -181,3 +181,9 @@ allow vtservice dmabuf_system_heap_device:chr_file r_file_perms;
 
 # Allow calls between vtservice and videotelephony AIDL
 hal_client_domain(vtservice, hal_mtk_videotelephony)
+allow vtservice untrusted_app:binder call;
+allow vtservice untrusted_app_all:binder call;
+get_prop(vtservice, vendor_mtk_volte_support_prop)
+get_prop(vtservice, vendor_mtk_vilte_support_prop)
+get_prop(vtservice, vendor_mtk_viwifi_support_prop)
+get_prop(vtservice, vendor_mtk_log_tel_dbg_prop)
